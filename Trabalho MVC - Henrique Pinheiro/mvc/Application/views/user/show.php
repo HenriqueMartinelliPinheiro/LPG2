@@ -11,10 +11,10 @@
             </tr>
           </thead>
           <tbody>
-            <?php foreach ($data['user'] as $user) { ?>
+            <?php foreach ($data['tarefa'] as $tarefa) { ?>
             <tr>
-              <td><?= $user['id'] ?></td>
-              <td><?= $user['name'] ?></td>
+              <td><?= $tarefa['id'] ?></td>
+              <td><?= $tarefa['name'] ?></td>
             </tr>
             <?php }?>
           </tbody>
