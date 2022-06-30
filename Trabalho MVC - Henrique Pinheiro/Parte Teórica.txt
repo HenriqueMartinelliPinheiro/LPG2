@@ -1,0 +1,35 @@
+Aluno: Henrique Martinelli Pinheiro
+
+Pontos positvos de usar o MVC:
+	- Organização;
+	- Separação entre interfaces, banco, e controllers, facilitando a encontrar 
+	erros, ou dar manutenção no código;
+
+Pontos Negativos: 
+	-  É necessário mais para compreender e modelar o projeto;
+	- Não é recomendado para pequenos projetos;
+
+
+Componentes do Padrão MVC:
+
+	- Application: Esta pasta é onde ficará o código fonte;
+
+	- Public: É o diretório raiz quando o usuário acessa a aplicação;	
+
+	- Controllers: Armazena os controladores que recebem os dados do usuário e 
+	decidem o que fazer com eles, se vai enviá-los para o banco, fazer um 
+	tratamento antes, ou então chamar uma view;
+
+	- Core: Armazena o App.php, o Controller.php e o Database.php. O App.php
+	trata a URL e decide qual controller vai ser chamado e qual método desse 
+	controlador. O Controller.php responsável pelas interações com o banco, 
+	além de chamar as views. Por último o Database.php armazena a conexão com
+	banco;
+
+	 - Models: Aqui ficam as classes que farão as interações com o banco de dados;
+	
+	- Views: São as interfaces que irão interagir com o usuário;
+
+	- autoload.php: Este arquivo carrega automaticamente todas as classes do 
+	Application;
+
